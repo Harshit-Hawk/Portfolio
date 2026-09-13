@@ -66,11 +66,11 @@ const CustomCursor = () => {
                     translateY: '-50%',
                     width: isClicking ? 10 : isHovered ? 8 : 6,
                     height: isClicking ? 10 : isHovered ? 8 : 6,
-                    backgroundColor: isHovered ? '#ffffff' : 'var(--electric-cyan)',
+                    backgroundColor: isHovered ? '#0b0f19' : 'var(--electric-blue)',
                     borderRadius: '50%',
                     boxShadow: isHovered
-                        ? '0 0 15px #ffffff, 0 0 25px var(--electric-cyan)'
-                        : '0 0 10px var(--electric-cyan)',
+                        ? '0 0 12px rgba(11, 15, 25, 0.3), 0 0 20px rgba(0, 102, 255, 0.35)'
+                        : '0 0 8px rgba(0, 102, 255, 0.4)',
                     transition: 'width 0.15s, height 0.15s, background-color 0.15s',
                     pointerEvents: 'none',
                 }}
@@ -90,8 +90,8 @@ const CustomCursor = () => {
                     width: isHovered ? 40 : 26,
                     height: isHovered ? 40 : 26,
                     borderRadius: '50%',
-                    border: `1.5px solid ${isHovered ? 'rgba(0, 212, 255, 0.9)' : 'rgba(0, 102, 255, 0.5)'}`,
-                    boxShadow: isHovered ? '0 0 18px rgba(0, 212, 255, 0.4)' : 'none',
+                    border: `1.5px solid ${isHovered ? 'rgba(0, 102, 255, 0.85)' : 'rgba(0, 102, 255, 0.45)'}`,
+                    boxShadow: isHovered ? '0 0 16px rgba(0, 102, 255, 0.25)' : 'none',
                     transition: 'width 0.2s ease, height 0.2s ease, border-color 0.2s',
                     pointerEvents: 'none',
                 }}

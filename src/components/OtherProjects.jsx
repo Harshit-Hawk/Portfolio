@@ -58,7 +58,7 @@ const OtherProjects = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -104,7 +104,8 @@ const OtherProjects = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     justifyContent: 'space-between',
-                                    border: '1px solid rgba(0, 102, 255, 0.2)'
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)'
                                 }}
                             >
                                 <div>
@@ -113,21 +114,23 @@ const OtherProjects = () => {
                                             width: '42px',
                                             height: '42px',
                                             borderRadius: '10px',
-                                            background: 'rgba(0, 102, 255, 0.12)',
-                                            border: '1px solid rgba(0, 102, 255, 0.25)',
+                                            background: '#eef5ff',
+                                            border: '1px solid #bfdbfe',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={20} color="var(--electric-cyan)" />
+                                            <Icon size={20} color="var(--electric-blue)" />
                                         </div>
                                         <span style={{
                                             fontSize: '0.74rem',
                                             fontFamily: 'var(--font-mono)',
-                                            color: 'var(--text-muted)',
-                                            background: 'rgba(255, 255, 255, 0.04)',
+                                            color: 'var(--electric-blue)',
+                                            background: '#f0f7ff',
+                                            border: '1px solid #dbeafe',
                                             padding: '4px 10px',
-                                            borderRadius: '6px'
+                                            borderRadius: '6px',
+                                            fontWeight: '600'
                                         }}>
                                             {p.category}
                                         </span>
@@ -137,7 +140,7 @@ const OtherProjects = () => {
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.45rem',
                                         fontWeight: '700',
-                                        color: '#ffffff',
+                                        color: '#0b0f19',
                                         marginBottom: '0.8rem'
                                     }}>
                                         {p.title}
@@ -160,7 +163,8 @@ const OtherProjects = () => {
                                         color: 'var(--text-muted)',
                                         textTransform: 'uppercase',
                                         letterSpacing: '1px',
-                                        marginBottom: '8px'
+                                        marginBottom: '8px',
+                                        fontWeight: '600'
                                     }}>
                                         {p.tagLabel}
                                     </div>
@@ -171,11 +175,12 @@ const OtherProjects = () => {
                                                 style={{
                                                     fontSize: '0.75rem',
                                                     fontFamily: 'var(--font-mono)',
-                                                    color: 'var(--electric-cyan)',
-                                                    background: 'rgba(0, 212, 255, 0.06)',
-                                                    border: '1px solid rgba(0, 212, 255, 0.15)',
+                                                    color: 'var(--electric-blue)',
+                                                    background: '#eef5ff',
+                                                    border: '1px solid #bfdbfe',
                                                     padding: '3px 8px',
-                                                    borderRadius: '4px'
+                                                    borderRadius: '4px',
+                                                    fontWeight: '600'
                                                 }}
                                             >
                                                 {tag}
@@ -197,7 +202,8 @@ const OtherProjects = () => {
                     style={{
                         padding: '2.4rem',
                         border: '1px dashed rgba(0, 102, 255, 0.35)',
-                        background: 'rgba(4, 8, 20, 0.6)'
+                        background: '#ffffff',
+                        boxShadow: '0 4px 15px rgba(0, 102, 255, 0.04)'
                     }}
                 >
                     <div style={{
@@ -209,8 +215,8 @@ const OtherProjects = () => {
                         gap: '1rem'
                     }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                            <Code2 size={20} color="var(--electric-cyan)" />
-                            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: '700', color: '#ffffff' }}>
+                            <Code2 size={20} color="var(--electric-blue)" />
+                            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: '700', color: '#0b0f19' }}>
                                 [Project Name]
                             </h3>
                             <span style={{ fontSize: '0.72rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)' }}>
@@ -222,7 +228,7 @@ const OtherProjects = () => {
                             <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
                                 [GitHub URL]
                             </span>
-                            <span style={{ fontSize: '0.8rem', color: 'var(--electric-cyan)', fontFamily: 'var(--font-mono)' }}>
+                            <span style={{ fontSize: '0.8rem', color: 'var(--electric-blue)', fontFamily: 'var(--font-mono)', fontWeight: '600' }}>
                                 [Live Demo]
                             </span>
                         </div>
@@ -235,7 +241,7 @@ const OtherProjects = () => {
                         fontSize: '0.9rem'
                     }}>
                         <div>
-                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600' }}>
                                 PROBLEM
                             </div>
                             <div style={{ color: 'var(--text-secondary)' }}>
@@ -244,7 +250,7 @@ const OtherProjects = () => {
                         </div>
 
                         <div>
-                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600' }}>
                                 SOLUTION
                             </div>
                             <div style={{ color: 'var(--text-secondary)' }}>
@@ -253,7 +259,7 @@ const OtherProjects = () => {
                         </div>
 
                         <div>
-                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600' }}>
                                 WHAT I BUILT
                             </div>
                             <div style={{ color: 'var(--text-secondary)' }}>
@@ -262,10 +268,10 @@ const OtherProjects = () => {
                         </div>
 
                         <div>
-                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px' }}>
+                            <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', marginBottom: '4px', fontWeight: '600' }}>
                                 TECHNOLOGY USED
                             </div>
-                            <div style={{ color: 'var(--electric-cyan)', fontFamily: 'var(--font-mono)' }}>
+                            <div style={{ color: 'var(--electric-blue)', fontFamily: 'var(--font-mono)', fontWeight: '600' }}>
                                 [React • Node.js • Database • APIs]
                             </div>
                         </div>

@@ -58,7 +58,7 @@ const ExperienceTimeline = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -96,7 +96,7 @@ const ExperienceTimeline = () => {
                         bottom: '20px',
                         left: '27px',
                         width: '2px',
-                        background: 'linear-gradient(180deg, var(--electric-cyan) 0%, rgba(0, 102, 255, 0.2) 100%)',
+                        background: 'linear-gradient(180deg, var(--electric-blue) 0%, rgba(0, 102, 255, 0.1) 100%)',
                         display: 'none' // Controlled on desktop
                     }} />
 
@@ -112,7 +112,8 @@ const ExperienceTimeline = () => {
                                 className="bento-card"
                                 style={{
                                     padding: '2.2rem',
-                                    border: '1px solid rgba(0, 102, 255, 0.25)',
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)',
                                     display: 'grid',
                                     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                                     gap: '1.5rem',
@@ -130,24 +131,24 @@ const ExperienceTimeline = () => {
                                             width: '40px',
                                             height: '40px',
                                             borderRadius: '8px',
-                                            background: 'rgba(0, 102, 255, 0.12)',
-                                            border: '1px solid rgba(0, 102, 255, 0.3)',
+                                            background: '#eef5ff',
+                                            border: '1px solid #bfdbfe',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={20} color="var(--electric-cyan)" />
+                                            <Icon size={20} color="var(--electric-blue)" />
                                         </div>
                                         <div>
                                             <h3 style={{
                                                 fontFamily: 'var(--font-display)',
                                                 fontSize: '1.3rem',
-                                                fontWeight: '700',
-                                                color: '#ffffff'
+                                                fontWeight: '800',
+                                                color: '#0b0f19'
                                             }}>
                                                 {item.role}
                                             </h3>
-                                            <div style={{ color: 'var(--electric-blue-light)', fontWeight: '600', fontSize: '0.9rem' }}>
+                                            <div style={{ color: 'var(--electric-blue)', fontWeight: '700', fontSize: '0.9rem' }}>
                                                 {item.organization}
                                             </div>
                                         </div>
@@ -174,13 +175,14 @@ const ExperienceTimeline = () => {
                                         gap: '6px',
                                         fontSize: '0.8rem',
                                         fontFamily: 'var(--font-mono)',
-                                        color: 'var(--text-white)',
-                                        background: 'rgba(255, 255, 255, 0.05)',
-                                        padding: '4px 12px',
+                                        color: '#0b0f19',
+                                        background: '#f1f5f9',
+                                        padding: '5px 14px',
                                         borderRadius: '20px',
-                                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                                        border: '1px solid rgba(15, 23, 42, 0.1)',
+                                        fontWeight: '600'
                                     }}>
-                                        <Calendar size={13} color="var(--electric-cyan)" />
+                                        <Calendar size={13} color="var(--electric-blue)" />
                                         <span>{item.period}</span>
                                     </div>
 
@@ -191,11 +193,12 @@ const ExperienceTimeline = () => {
                                                 style={{
                                                     fontSize: '0.75rem',
                                                     fontFamily: 'var(--font-mono)',
-                                                    color: 'var(--text-secondary)',
-                                                    background: 'rgba(0, 102, 255, 0.08)',
-                                                    border: '1px solid rgba(0, 102, 255, 0.15)',
+                                                    color: 'var(--electric-blue)',
+                                                    background: '#eef5ff',
+                                                    border: '1px solid #bfdbfe',
                                                     padding: '3px 8px',
-                                                    borderRadius: '4px'
+                                                    borderRadius: '4px',
+                                                    fontWeight: '600'
                                                 }}
                                             >
                                                 {tag}

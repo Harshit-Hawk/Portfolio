@@ -15,8 +15,8 @@ const achievements = [
             'Full-stack architecture under extreme time constraints',
             'Live product pitching, deck preparation, and technical Q&A with judges'
         ],
-        gradient: 'linear-gradient(135deg, rgba(0, 102, 255, 0.15) 0%, rgba(0, 212, 255, 0.05) 100%)',
-        border: 'rgba(0, 102, 255, 0.35)'
+        gradient: 'linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)',
+        border: 'rgba(0, 102, 255, 0.2)'
     },
     {
         icon: Users,
@@ -30,8 +30,8 @@ const achievements = [
             'Managed event operations, player registration, and community communication',
             'Created dedicated Discord servers and community hubs engaging 100+ active students'
         ],
-        gradient: 'linear-gradient(135deg, rgba(0, 212, 255, 0.12) 0%, rgba(0, 102, 255, 0.04) 100%)',
-        border: 'rgba(0, 212, 255, 0.3)'
+        gradient: 'linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%)',
+        border: 'rgba(16, 185, 129, 0.25)'
     },
     {
         icon: Rocket,
@@ -45,8 +45,8 @@ const achievements = [
             'Integrated 8 modular services including attendance, notices, and routine manager',
             'Conducted student interviews and usability testing for iterative feature improvement'
         ],
-        gradient: 'linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(0, 102, 255, 0.08) 100%)',
-        border: 'rgba(255, 255, 255, 0.15)'
+        gradient: 'linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%)',
+        border: 'rgba(124, 58, 237, 0.25)'
     }
 ];
 
@@ -81,7 +81,7 @@ const AchievementsSection = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -144,24 +144,25 @@ const AchievementsSection = () => {
                                             width: '48px',
                                             height: '48px',
                                             borderRadius: '12px',
-                                            background: 'rgba(0, 102, 255, 0.15)',
-                                            border: '1px solid rgba(0, 212, 255, 0.3)',
+                                            background: '#ffffff',
+                                            border: '1px solid rgba(15, 23, 42, 0.1)',
+                                            boxShadow: '0 2px 8px rgba(15, 23, 42, 0.05)',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={24} color="var(--electric-cyan)" />
+                                            <Icon size={24} color="var(--electric-blue)" />
                                         </div>
 
                                         <span style={{
                                             fontSize: '0.75rem',
                                             fontFamily: 'var(--font-mono)',
-                                            color: 'var(--electric-cyan)',
-                                            background: 'rgba(0, 102, 255, 0.12)',
-                                            border: '1px solid rgba(0, 212, 255, 0.25)',
+                                            color: 'var(--electric-blue)',
+                                            background: '#ffffff',
+                                            border: '1px solid #bfdbfe',
                                             padding: '4px 10px',
                                             borderRadius: '20px',
-                                            fontWeight: '600'
+                                            fontWeight: '700'
                                         }}>
                                             {item.badge}
                                         </span>
@@ -173,7 +174,8 @@ const AchievementsSection = () => {
                                         color: 'var(--text-muted)',
                                         textTransform: 'uppercase',
                                         letterSpacing: '0.8px',
-                                        marginBottom: '0.4rem'
+                                        marginBottom: '0.4rem',
+                                        fontWeight: '600'
                                     }}>
                                         {item.category}
                                     </div>
@@ -181,8 +183,8 @@ const AchievementsSection = () => {
                                     <h3 style={{
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.45rem',
-                                        fontWeight: '700',
-                                        color: '#ffffff',
+                                        fontWeight: '800',
+                                        color: '#0b0f19',
                                         marginBottom: '0.5rem',
                                         letterSpacing: '-0.4px'
                                     }}>
@@ -191,8 +193,9 @@ const AchievementsSection = () => {
 
                                     <div style={{
                                         fontSize: '0.85rem',
-                                        color: 'var(--electric-cyan)',
+                                        color: 'var(--electric-blue)',
                                         fontFamily: 'var(--font-mono)',
+                                        fontWeight: '600',
                                         marginBottom: '1.2rem',
                                         display: 'flex',
                                         alignItems: 'center',
@@ -214,7 +217,7 @@ const AchievementsSection = () => {
 
                                 {/* Key Highlights List */}
                                 <div style={{
-                                    borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                                    borderTop: '1px solid rgba(15, 23, 42, 0.08)',
                                     paddingTop: '1.2rem',
                                     display: 'flex',
                                     flexDirection: 'column',
@@ -225,7 +228,8 @@ const AchievementsSection = () => {
                                         fontFamily: 'var(--font-mono)',
                                         color: 'var(--text-muted)',
                                         textTransform: 'uppercase',
-                                        letterSpacing: '0.5px'
+                                        letterSpacing: '0.5px',
+                                        fontWeight: '600'
                                     }}>
                                         Key Takeaways:
                                     </div>
@@ -238,7 +242,7 @@ const AchievementsSection = () => {
                                             color: 'var(--text-secondary)',
                                             lineHeight: '1.5'
                                         }}>
-                                            <CheckCircle2 size={15} color="var(--electric-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                                            <CheckCircle2 size={15} color="var(--electric-blue)" style={{ flexShrink: 0, marginTop: '2px' }} />
                                             <span>{point}</span>
                                         </div>
                                     ))}

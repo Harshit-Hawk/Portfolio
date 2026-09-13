@@ -54,7 +54,7 @@ const Contact = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -85,9 +85,10 @@ const Contact = () => {
                     viewport={{ once: true }}
                     style={{
                         padding: '1.2rem 1.6rem',
-                        background: 'rgba(8, 12, 24, 0.8)',
-                        border: '1px solid rgba(0, 102, 255, 0.3)',
-                        borderRadius: '12px',
+                        background: 'rgba(239, 246, 255, 0.9)',
+                        border: '1px solid rgba(0, 102, 255, 0.22)',
+                        boxShadow: '0 4px 16px rgba(0, 102, 255, 0.05)',
+                        borderRadius: '14px',
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
@@ -97,10 +98,10 @@ const Contact = () => {
                     }}
                 >
                     <div>
-                        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: '600' }}>
                             Direct Email
                         </div>
-                        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.95rem', color: '#ffffff', fontWeight: '600' }}>
+                        <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.98rem', color: '#0b0f19', fontWeight: '700' }}>
                             {emailAddress}
                         </div>
                     </div>
@@ -111,18 +112,19 @@ const Contact = () => {
                             display: 'inline-flex',
                             alignItems: 'center',
                             gap: '6px',
-                            padding: '8px 16px',
-                            borderRadius: '8px',
-                            background: copied ? 'rgba(34, 197, 94, 0.15)' : 'rgba(0, 102, 255, 0.15)',
-                            border: `1px solid ${copied ? '#22c55e' : 'var(--electric-cyan)'}`,
-                            color: copied ? '#22c55e' : 'var(--electric-cyan)',
-                            fontSize: '0.82rem',
+                            padding: '9px 18px',
+                            borderRadius: '10px',
+                            background: copied ? 'rgba(34, 197, 94, 0.12)' : 'rgba(0, 102, 255, 0.1)',
+                            border: `1px solid ${copied ? '#22c55e' : 'rgba(0, 102, 255, 0.3)'}`,
+                            color: copied ? '#15803d' : 'var(--electric-blue)',
+                            fontSize: '0.85rem',
                             fontWeight: '600',
                             cursor: 'pointer',
-                            transition: 'all 0.2s'
+                            transition: 'all 0.2s',
+                            boxShadow: '0 2px 6px rgba(0, 0, 0, 0.04)'
                         }}
                     >
-                        {copied ? <Check size={14} /> : <Copy size={14} />}
+                        {copied ? <Check size={15} /> : <Copy size={15} />}
                         <span>{copied ? 'Copied to Clipboard!' : 'Copy Email'}</span>
                     </button>
                 </motion.div>
@@ -135,7 +137,8 @@ const Contact = () => {
                     className="bento-card"
                     style={{
                         padding: 'clamp(2rem, 5vw, 3.5rem)',
-                        border: '1px solid rgba(0, 102, 255, 0.25)'
+                        border: '1px solid rgba(0, 102, 255, 0.18)',
+                        background: 'rgba(255, 255, 255, 0.92)'
                     }}
                 >
                     {submitted ? (
@@ -152,18 +155,18 @@ const Contact = () => {
                             }}
                         >
                             <div style={{
-                                width: '60px',
-                                height: '60px',
+                                width: '64px',
+                                height: '64px',
                                 borderRadius: '50%',
-                                background: 'rgba(0, 102, 255, 0.15)',
-                                border: '1px solid var(--electric-cyan)',
+                                background: 'rgba(0, 102, 255, 0.1)',
+                                border: '1px solid var(--electric-blue)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center'
                             }}>
-                                <Check size={28} color="var(--electric-cyan)" />
+                                <Check size={30} color="var(--electric-blue)" />
                             </div>
-                            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: '#ffffff', fontWeight: '700' }}>
+                            <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.6rem', color: '#0b0f19', fontWeight: '700' }}>
                                 Message Sent Successfully
                             </h3>
                             <p style={{ color: 'var(--text-secondary)', maxWidth: '420px', lineHeight: '1.7', fontSize: '0.95rem' }}>
@@ -176,9 +179,9 @@ const Contact = () => {
                                 <div>
                                     <label style={{
                                         display: 'block',
-                                        fontSize: '0.82rem',
+                                        fontSize: '0.84rem',
                                         fontWeight: '600',
-                                        color: 'var(--text-secondary)',
+                                        color: '#334155',
                                         marginBottom: '8px'
                                     }}>
                                         Your Name
@@ -191,20 +194,23 @@ const Contact = () => {
                                         placeholder="Alex Rivera"
                                         style={{
                                             width: '100%',
-                                            padding: '0.9rem 1.1rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            borderRadius: '8px',
-                                            color: '#ffffff',
-                                            fontSize: '0.92rem',
+                                            padding: '0.95rem 1.15rem',
+                                            background: '#ffffff',
+                                            border: '1px solid rgba(15, 23, 42, 0.14)',
+                                            borderRadius: '10px',
+                                            color: '#0b0f19',
+                                            fontSize: '0.95rem',
                                             outline: 'none',
-                                            transition: 'border-color 0.2s'
+                                            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.03)',
+                                            transition: 'border-color 0.2s, box-shadow 0.2s'
                                         }}
                                         onFocusCapture={(e) => {
-                                            e.target.style.borderColor = 'var(--electric-cyan)';
+                                            e.target.style.borderColor = 'var(--electric-blue)';
+                                            e.target.style.boxShadow = '0 0 0 3px rgba(0, 102, 255, 0.15)';
                                         }}
                                         onBlurCapture={(e) => {
-                                            e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                                            e.target.style.borderColor = 'rgba(15, 23, 42, 0.14)';
+                                            e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.03)';
                                         }}
                                     />
                                 </div>
@@ -212,9 +218,9 @@ const Contact = () => {
                                 <div>
                                     <label style={{
                                         display: 'block',
-                                        fontSize: '0.82rem',
+                                        fontSize: '0.84rem',
                                         fontWeight: '600',
-                                        color: 'var(--text-secondary)',
+                                        color: '#334155',
                                         marginBottom: '8px'
                                     }}>
                                         Your Email
@@ -227,20 +233,23 @@ const Contact = () => {
                                         placeholder="alex@example.com"
                                         style={{
                                             width: '100%',
-                                            padding: '0.9rem 1.1rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            borderRadius: '8px',
-                                            color: '#ffffff',
-                                            fontSize: '0.92rem',
+                                            padding: '0.95rem 1.15rem',
+                                            background: '#ffffff',
+                                            border: '1px solid rgba(15, 23, 42, 0.14)',
+                                            borderRadius: '10px',
+                                            color: '#0b0f19',
+                                            fontSize: '0.95rem',
                                             outline: 'none',
-                                            transition: 'border-color 0.2s'
+                                            boxShadow: '0 1px 3px rgba(0, 0, 0, 0.03)',
+                                            transition: 'border-color 0.2s, box-shadow 0.2s'
                                         }}
                                         onFocusCapture={(e) => {
-                                            e.target.style.borderColor = 'var(--electric-cyan)';
+                                            e.target.style.borderColor = 'var(--electric-blue)';
+                                            e.target.style.boxShadow = '0 0 0 3px rgba(0, 102, 255, 0.15)';
                                         }}
                                         onBlurCapture={(e) => {
-                                            e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                                            e.target.style.borderColor = 'rgba(15, 23, 42, 0.14)';
+                                            e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.03)';
                                         }}
                                     />
                                 </div>
@@ -249,9 +258,9 @@ const Contact = () => {
                             <div>
                                 <label style={{
                                     display: 'block',
-                                    fontSize: '0.82rem',
+                                    fontSize: '0.84rem',
                                     fontWeight: '600',
-                                    color: 'var(--text-secondary)',
+                                    color: '#334155',
                                     marginBottom: '8px'
                                 }}>
                                     Your Message
@@ -264,31 +273,34 @@ const Contact = () => {
                                     placeholder="Tell me about your project, team, or idea..."
                                     style={{
                                         width: '100%',
-                                        padding: '0.9rem 1.1rem',
-                                        background: 'rgba(255, 255, 255, 0.03)',
-                                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                                        borderRadius: '8px',
-                                        color: '#ffffff',
-                                        fontSize: '0.92rem',
+                                        padding: '0.95rem 1.15rem',
+                                        background: '#ffffff',
+                                        border: '1px solid rgba(15, 23, 42, 0.14)',
+                                        borderRadius: '10px',
+                                        color: '#0b0f19',
+                                        fontSize: '0.95rem',
                                         fontFamily: 'inherit',
                                         outline: 'none',
-                                        transition: 'border-color 0.2s'
+                                        boxShadow: '0 1px 3px rgba(0, 0, 0, 0.03)',
+                                        transition: 'border-color 0.2s, box-shadow 0.2s'
                                     }}
                                     onFocusCapture={(e) => {
-                                        e.target.style.borderColor = 'var(--electric-cyan)';
+                                        e.target.style.borderColor = 'var(--electric-blue)';
+                                        e.target.style.boxShadow = '0 0 0 3px rgba(0, 102, 255, 0.15)';
                                     }}
                                     onBlurCapture={(e) => {
-                                        e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                                        e.target.style.borderColor = 'rgba(15, 23, 42, 0.14)';
+                                        e.target.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.03)';
                                     }}
                                 />
                             </div>
 
                             <motion.button
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
+                                whileHover={{ scale: 1.015 }}
+                                whileTap={{ scale: 0.985 }}
                                 type="submit"
                                 className="btn-electric"
-                                style={{ width: '100%', padding: '1.05rem', fontSize: '1rem', justifyContent: 'center' }}
+                                style={{ width: '100%', padding: '1.1rem', fontSize: '1rem', justifyContent: 'center' }}
                             >
                                 <span>Let’s Build Something</span>
                                 <ArrowUpRight size={18} />
@@ -300,7 +312,7 @@ const Contact = () => {
                     <div style={{
                         marginTop: '2.5rem',
                         paddingTop: '1.8rem',
-                        borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                        borderTop: '1px solid rgba(15, 23, 42, 0.08)',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '1.2rem'
@@ -310,7 +322,8 @@ const Contact = () => {
                             fontFamily: 'var(--font-mono)',
                             color: 'var(--text-muted)',
                             textTransform: 'uppercase',
-                            letterSpacing: '0.6px'
+                            letterSpacing: '0.6px',
+                            fontWeight: '600'
                         }}>
                             Direct Connect Channels:
                         </div>
@@ -324,29 +337,33 @@ const Contact = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{
-                                    padding: '10px 14px',
-                                    borderRadius: '8px',
-                                    background: 'rgba(255, 255, 255, 0.03)',
-                                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                                    padding: '12px 16px',
+                                    borderRadius: '10px',
+                                    background: 'rgba(248, 250, 252, 0.8)',
+                                    border: '1px solid rgba(15, 23, 42, 0.1)',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
+                                    gap: '10px',
                                     color: 'var(--text-secondary)',
                                     textDecoration: 'none',
-                                    fontSize: '0.85rem',
+                                    fontSize: '0.88rem',
                                     fontFamily: 'var(--font-mono)',
-                                    transition: 'border-color 0.2s, color 0.2s'
+                                    transition: 'all 0.2s'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.currentTarget.style.borderColor = 'var(--electric-cyan)';
-                                    e.currentTarget.style.color = '#ffffff';
+                                    e.currentTarget.style.borderColor = 'var(--electric-blue)';
+                                    e.currentTarget.style.color = '#0b0f19';
+                                    e.currentTarget.style.background = '#ffffff';
+                                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 102, 255, 0.1)';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                                    e.currentTarget.style.borderColor = 'rgba(15, 23, 42, 0.1)';
                                     e.currentTarget.style.color = 'var(--text-secondary)';
+                                    e.currentTarget.style.background = 'rgba(248, 250, 252, 0.8)';
+                                    e.currentTarget.style.boxShadow = 'none';
                                 }}
                             >
-                                <Github size={16} color="var(--electric-cyan)" />
+                                <Github size={17} color="var(--electric-blue)" />
                                 <span>[github.com/yourusername]</span>
                             </a>
 
@@ -355,29 +372,33 @@ const Contact = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{
-                                    padding: '10px 14px',
-                                    borderRadius: '8px',
-                                    background: 'rgba(255, 255, 255, 0.03)',
-                                    border: '1px solid rgba(255, 255, 255, 0.08)',
+                                    padding: '12px 16px',
+                                    borderRadius: '10px',
+                                    background: 'rgba(248, 250, 252, 0.8)',
+                                    border: '1px solid rgba(15, 23, 42, 0.1)',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: '8px',
+                                    gap: '10px',
                                     color: 'var(--text-secondary)',
                                     textDecoration: 'none',
-                                    fontSize: '0.85rem',
+                                    fontSize: '0.88rem',
                                     fontFamily: 'var(--font-mono)',
-                                    transition: 'border-color 0.2s, color 0.2s'
+                                    transition: 'all 0.2s'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.currentTarget.style.borderColor = 'var(--electric-cyan)';
-                                    e.currentTarget.style.color = '#ffffff';
+                                    e.currentTarget.style.borderColor = 'var(--electric-blue)';
+                                    e.currentTarget.style.color = '#0b0f19';
+                                    e.currentTarget.style.background = '#ffffff';
+                                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 102, 255, 0.1)';
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                                    e.currentTarget.style.borderColor = 'rgba(15, 23, 42, 0.1)';
                                     e.currentTarget.style.color = 'var(--text-secondary)';
+                                    e.currentTarget.style.background = 'rgba(248, 250, 252, 0.8)';
+                                    e.currentTarget.style.boxShadow = 'none';
                                 }}
                             >
-                                <Linkedin size={16} color="var(--electric-cyan)" />
+                                <Linkedin size={17} color="var(--electric-blue)" />
                                 <span>[linkedin.com/in/yourusername]</span>
                             </a>
                         </div>

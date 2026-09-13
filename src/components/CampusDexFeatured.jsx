@@ -48,9 +48,9 @@ const CampusDexFeatured = () => {
                     className="bento-card"
                     style={{
                         padding: 'clamp(2rem, 5vw, 4rem)',
-                        border: '1px solid rgba(0, 102, 255, 0.4)',
-                        boxShadow: '0 25px 70px rgba(0, 102, 255, 0.15)',
-                        background: 'linear-gradient(135deg, rgba(8, 14, 30, 0.95) 0%, rgba(4, 6, 14, 0.98) 100%)'
+                        border: '1px solid rgba(0, 102, 255, 0.25)',
+                        boxShadow: '0 20px 60px rgba(0, 102, 255, 0.09)',
+                        background: 'linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)'
                     }}
                 >
                     {/* Header Row: Title, Subtitle, & Direct Action */}
@@ -60,7 +60,7 @@ const CampusDexFeatured = () => {
                         alignItems: 'flex-start',
                         flexWrap: 'wrap',
                         gap: '2rem',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+                        borderBottom: '1px solid rgba(15, 23, 42, 0.08)',
                         paddingBottom: '2.5rem',
                         marginBottom: '3rem'
                     }}>
@@ -71,9 +71,9 @@ const CampusDexFeatured = () => {
                                 gap: '8px',
                                 fontSize: '0.8rem',
                                 fontFamily: 'var(--font-mono)',
-                                color: 'var(--electric-cyan)',
+                                color: 'var(--electric-blue)',
                                 marginBottom: '1rem',
-                                fontWeight: '600'
+                                fontWeight: '700'
                             }}>
                                 <span className="status-dot" style={{ width: '6px', height: '6px' }} />
                                 VENTURE IN ACTIVE DEVELOPMENT
@@ -85,7 +85,7 @@ const CampusDexFeatured = () => {
                                 fontWeight: '900',
                                 letterSpacing: '-1.5px',
                                 lineHeight: '1.05',
-                                color: '#ffffff',
+                                color: '#0b0f19',
                                 marginBottom: '0.8rem'
                             }}>
                                 Campus<span className="text-electric">Dex</span>
@@ -93,8 +93,8 @@ const CampusDexFeatured = () => {
 
                             <p style={{
                                 fontSize: 'clamp(1.1rem, 1.4vw, 1.35rem)',
-                                color: 'var(--electric-blue-light)',
-                                fontWeight: '500',
+                                color: 'var(--electric-blue)',
+                                fontWeight: '600',
                                 letterSpacing: '-0.3px'
                             }}>
                                 A unified digital platform for modern campus management.
@@ -131,7 +131,8 @@ const CampusDexFeatured = () => {
                                 letterSpacing: '1.5px',
                                 color: 'var(--text-muted)',
                                 marginBottom: '1rem',
-                                fontFamily: 'var(--font-mono)'
+                                fontFamily: 'var(--font-mono)',
+                                fontWeight: '600'
                             }}>
                                 The Problem &amp; Vision
                             </h3>
@@ -155,24 +156,25 @@ const CampusDexFeatured = () => {
                         {/* Founder Role & Responsibilities Card */}
                         <div style={{
                             padding: '2rem',
-                            background: 'rgba(0, 102, 255, 0.06)',
-                            border: '1px solid rgba(0, 102, 255, 0.25)',
+                            background: '#ffffff',
+                            border: '1px solid #bfdbfe',
+                            boxShadow: '0 4px 18px rgba(0, 102, 255, 0.06)',
                             borderRadius: '14px',
                             display: 'flex',
                             flexDirection: 'column',
                             gap: '1.6rem'
                         }}>
                             <div>
-                                <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px' }}>
+                                <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px', fontWeight: '600' }}>
                                     My Role
                                 </div>
-                                <div style={{ fontSize: '1.2rem', fontWeight: '700', color: '#ffffff', fontFamily: 'var(--font-display)' }}>
+                                <div style={{ fontSize: '1.25rem', fontWeight: '800', color: '#0b0f19', fontFamily: 'var(--font-display)' }}>
                                     Founder / Product &amp; Development
                                 </div>
                             </div>
 
                             <div>
-                                <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px' }}>
+                                <div style={{ fontSize: '0.75rem', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px', fontWeight: '600' }}>
                                     Key Responsibilities
                                 </div>
                                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
@@ -182,12 +184,12 @@ const CampusDexFeatured = () => {
                                             style={{
                                                 fontSize: '0.8rem',
                                                 fontFamily: 'var(--font-mono)',
-                                                color: 'var(--electric-cyan)',
-                                                background: 'rgba(0, 212, 255, 0.1)',
-                                                border: '1px solid rgba(0, 212, 255, 0.25)',
+                                                color: 'var(--electric-blue)',
+                                                background: '#eef5ff',
+                                                border: '1px solid #bfdbfe',
                                                 padding: '4px 10px',
                                                 borderRadius: '6px',
-                                                fontWeight: '500'
+                                                fontWeight: '600'
                                             }}
                                         >
                                             {item}
@@ -211,11 +213,12 @@ const CampusDexFeatured = () => {
                                 textTransform: 'uppercase',
                                 letterSpacing: '1.5px',
                                 color: 'var(--text-muted)',
-                                fontFamily: 'var(--font-mono)'
+                                fontFamily: 'var(--font-mono)',
+                                fontWeight: '600'
                             }}>
                                 Platform Capabilities &amp; Architecture Modules
                             </h3>
-                            <span style={{ fontSize: '0.8rem', color: 'var(--electric-cyan)', fontFamily: 'var(--font-mono)' }}>
+                            <span style={{ fontSize: '0.8rem', color: 'var(--electric-blue)', fontFamily: 'var(--font-mono)', fontWeight: '600' }}>
                                 8 Core Services
                             </span>
                         </div>
@@ -232,17 +235,19 @@ const CampusDexFeatured = () => {
                                         key={m.name}
                                         style={{
                                             padding: '1.4rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.08)',
+                                            background: '#ffffff',
+                                            border: '1px solid rgba(15, 23, 42, 0.08)',
+                                            boxShadow: '0 2px 8px rgba(15, 23, 42, 0.03)',
                                             borderRadius: '10px',
                                             display: 'flex',
                                             flexDirection: 'column',
-                                            gap: '8px'
+                                            gap: '8px',
+                                            transition: 'all 0.2s'
                                         }}
                                     >
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                            <Icon size={18} color="var(--electric-cyan)" />
-                                            <div style={{ fontSize: '0.95rem', fontWeight: '700', color: '#ffffff' }}>
+                                            <Icon size={18} color="var(--electric-blue)" />
+                                            <div style={{ fontSize: '0.95rem', fontWeight: '700', color: '#0b0f19' }}>
                                                 {m.name}
                                             </div>
                                         </div>

@@ -51,11 +51,12 @@ const Navbar = () => {
                 alignItems: 'center',
                 zIndex: 100,
                 background: scrolled
-                    ? 'rgba(0, 0, 0, 0.88)'
-                    : 'rgba(0, 0, 0, 0.5)',
+                    ? 'rgba(255, 255, 255, 0.92)'
+                    : 'rgba(255, 255, 255, 0.72)',
                 backdropFilter: 'blur(16px)',
                 WebkitBackdropFilter: 'blur(16px)',
-                borderBottom: `1px solid ${scrolled ? 'rgba(0, 102, 255, 0.2)' : 'rgba(255, 255, 255, 0.05)'}`,
+                borderBottom: `1px solid ${scrolled ? 'rgba(0, 102, 255, 0.18)' : 'rgba(15, 23, 42, 0.08)'}`,
+                boxShadow: scrolled ? '0 4px 20px rgba(15, 23, 42, 0.05)' : 'none',
                 transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
             }}
         >
@@ -74,13 +75,13 @@ const Navbar = () => {
                     fontSize: '1.25rem',
                     fontWeight: '800',
                     letterSpacing: '-0.5px',
-                    color: '#ffffff',
+                    color: '#0b0f19',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px'
                 }}>
                     HARSHIT
-                    <span style={{ color: 'var(--electric-cyan)', fontSize: '1.5rem', lineHeight: '0' }}>•</span>
+                    <span style={{ color: 'var(--electric-blue)', fontSize: '1.5rem', lineHeight: '0' }}>•</span>
                 </div>
             </a>
 
@@ -105,7 +106,7 @@ const Navbar = () => {
                                     padding: '4px 0'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.currentTarget.style.color = '#ffffff';
+                                    e.currentTarget.style.color = 'var(--electric-blue)';
                                 }}
                                 onMouseLeave={(e) => {
                                     e.currentTarget.style.color = 'var(--text-secondary)';
@@ -141,9 +142,9 @@ const Navbar = () => {
                     <button
                         onClick={() => setIsOpen(!isOpen)}
                         style={{
-                            background: 'rgba(255, 255, 255, 0.05)',
-                            border: '1px solid rgba(255, 255, 255, 0.12)',
-                            color: '#fff',
+                            background: '#f1f5f9',
+                            border: '1px solid rgba(15, 23, 42, 0.12)',
+                            color: '#0b0f19',
                             padding: '8px',
                             borderRadius: '8px',
                             display: 'flex',
@@ -171,16 +172,16 @@ const Navbar = () => {
                             top: '68px',
                             left: '1rem',
                             right: '1rem',
-                            background: 'rgba(6, 8, 16, 0.96)',
+                            background: 'rgba(255, 255, 255, 0.98)',
                             backdropFilter: 'blur(20px)',
                             borderRadius: '14px',
-                            border: '1px solid rgba(0, 102, 255, 0.25)',
+                            border: '1px solid rgba(0, 102, 255, 0.2)',
                             padding: '1.8rem 1.5rem',
                             display: 'flex',
                             flexDirection: 'column',
                             gap: '1.2rem',
                             zIndex: 99,
-                            boxShadow: '0 20px 50px rgba(0, 0, 0, 0.7)'
+                            boxShadow: '0 20px 50px rgba(15, 23, 42, 0.12)'
                         }}
                     >
                         {navItems.map((item) => (
@@ -190,11 +191,11 @@ const Navbar = () => {
                                 onClick={() => setIsOpen(false)}
                                 style={{
                                     textDecoration: 'none',
-                                    color: '#ffffff',
+                                    color: '#0b0f19',
                                     fontSize: '1.1rem',
-                                    fontWeight: '500',
+                                    fontWeight: '600',
                                     padding: '8px 0',
-                                    borderBottom: '1px solid rgba(255, 255, 255, 0.06)'
+                                    borderBottom: '1px solid rgba(15, 23, 42, 0.06)'
                                 }}
                             >
                                 {item.label}

@@ -84,7 +84,7 @@ const CurrentlyBuilding = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -130,8 +130,8 @@ const CurrentlyBuilding = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     justifyContent: 'space-between',
-                                    border: '1px solid rgba(0, 102, 255, 0.22)',
-                                    background: 'rgba(6, 9, 20, 0.95)'
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)'
                                 }}
                             >
                                 <div>
@@ -146,8 +146,8 @@ const CurrentlyBuilding = () => {
                                             display: 'flex',
                                             alignItems: 'center',
                                             gap: '8px',
-                                            background: 'rgba(0, 102, 255, 0.1)',
-                                            border: '1px solid rgba(0, 212, 255, 0.2)',
+                                            background: '#f1f5f9',
+                                            border: '1px solid rgba(15, 23, 42, 0.12)',
                                             padding: '4px 12px',
                                             borderRadius: '20px'
                                         }}>
@@ -161,8 +161,8 @@ const CurrentlyBuilding = () => {
                                             <span style={{
                                                 fontSize: '0.72rem',
                                                 fontFamily: 'var(--font-mono)',
-                                                color: '#ffffff',
-                                                fontWeight: '600'
+                                                color: '#0b0f19',
+                                                fontWeight: '700'
                                             }}>
                                                 {item.badge}
                                             </span>
@@ -172,21 +172,21 @@ const CurrentlyBuilding = () => {
                                             width: '38px',
                                             height: '38px',
                                             borderRadius: '10px',
-                                            background: 'rgba(255, 255, 255, 0.04)',
-                                            border: '1px solid rgba(255, 255, 255, 0.08)',
+                                            background: '#eef5ff',
+                                            border: '1px solid #bfdbfe',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={18} color="var(--electric-cyan)" />
+                                            <Icon size={18} color="var(--electric-blue)" />
                                         </div>
                                     </div>
 
                                     <h3 style={{
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.45rem',
-                                        fontWeight: '700',
-                                        color: '#ffffff',
+                                        fontWeight: '800',
+                                        color: '#0b0f19',
                                         marginBottom: '0.3rem'
                                     }}>
                                         {item.title}
@@ -195,7 +195,8 @@ const CurrentlyBuilding = () => {
                                     <div style={{
                                         fontSize: '0.82rem',
                                         fontFamily: 'var(--font-mono)',
-                                        color: 'var(--electric-cyan)',
+                                        color: 'var(--electric-blue)',
+                                        fontWeight: '600',
                                         marginBottom: '1rem'
                                     }}>
                                         {item.tagline}
@@ -205,15 +206,15 @@ const CurrentlyBuilding = () => {
                                     <div style={{
                                         padding: '0.7rem 1rem',
                                         borderRadius: '8px',
-                                        background: 'rgba(255, 255, 255, 0.02)',
-                                        border: '1px solid rgba(255, 255, 255, 0.06)',
+                                        background: '#f8fafc',
+                                        border: '1px solid rgba(15, 23, 42, 0.08)',
                                         fontSize: '0.78rem',
                                         fontFamily: 'var(--font-mono)',
                                         color: 'var(--text-secondary)',
                                         marginBottom: '1.4rem'
                                     }}>
-                                        <span style={{ color: 'var(--text-muted)' }}>STATUS: </span>
-                                        <span style={{ color: '#ffffff', fontWeight: '500' }}>{item.status}</span>
+                                        <span style={{ color: 'var(--text-muted)', fontWeight: '600' }}>STATUS: </span>
+                                        <span style={{ color: '#0b0f19', fontWeight: '700' }}>{item.status}</span>
                                     </div>
 
                                     <p style={{
@@ -229,7 +230,7 @@ const CurrentlyBuilding = () => {
                                 <div>
                                     {/* Deliverables */}
                                     <div style={{
-                                        borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                                        borderTop: '1px solid rgba(15, 23, 42, 0.08)',
                                         paddingTop: '1.2rem',
                                         marginBottom: '1.4rem',
                                         display: 'flex',
@@ -240,7 +241,8 @@ const CurrentlyBuilding = () => {
                                             fontSize: '0.72rem',
                                             fontFamily: 'var(--font-mono)',
                                             color: 'var(--text-muted)',
-                                            textTransform: 'uppercase'
+                                            textTransform: 'uppercase',
+                                            fontWeight: '600'
                                         }}>
                                             Active Deliverables:
                                         </div>
@@ -252,7 +254,7 @@ const CurrentlyBuilding = () => {
                                                 fontSize: '0.84rem',
                                                 color: 'var(--text-secondary)'
                                             }}>
-                                                <CheckCircle size={14} color="var(--electric-cyan)" style={{ flexShrink: 0 }} />
+                                                <CheckCircle size={14} color="var(--electric-blue)" style={{ flexShrink: 0 }} />
                                                 <span>{del}</span>
                                             </div>
                                         ))}
@@ -266,8 +268,8 @@ const CurrentlyBuilding = () => {
                                             gap: '6px',
                                             fontSize: '0.85rem',
                                             fontFamily: 'var(--font-mono)',
-                                            fontWeight: '600',
-                                            color: 'var(--electric-cyan)',
+                                            fontWeight: '700',
+                                            color: 'var(--electric-blue)',
                                             textDecoration: 'none',
                                             transition: 'gap 0.2s'
                                         }}

@@ -61,7 +61,7 @@ const AboutMe = () => {
                             fontWeight: '800',
                             letterSpacing: '-1.5px',
                             lineHeight: '1.15',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1.8rem'
                         }}>
                             More than <span className="text-electric">just code.</span>
@@ -109,7 +109,8 @@ const AboutMe = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         gap: '1rem',
-                                        border: '1px solid rgba(0, 102, 255, 0.25)'
+                                        border: '1px solid rgba(0, 102, 255, 0.18)',
+                                        background: 'var(--bg-card)'
                                     }}
                                 >
                                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -117,20 +118,24 @@ const AboutMe = () => {
                                             width: '44px',
                                             height: '44px',
                                             borderRadius: '10px',
-                                            background: 'rgba(0, 102, 255, 0.12)',
-                                            border: '1px solid rgba(0, 102, 255, 0.3)',
+                                            background: '#eef5ff',
+                                            border: '1px solid #bfdbfe',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={20} color="var(--electric-cyan)" />
+                                            <Icon size={20} color="var(--electric-blue)" />
                                         </div>
                                         <span style={{
                                             fontSize: '0.72rem',
                                             fontFamily: 'var(--font-mono)',
-                                            color: 'var(--text-muted)',
+                                            color: 'var(--electric-blue)',
+                                            background: '#f0f7ff',
+                                            padding: '2px 8px',
+                                            borderRadius: '4px',
                                             textTransform: 'uppercase',
-                                            letterSpacing: '0.5px'
+                                            letterSpacing: '0.5px',
+                                            fontWeight: '600'
                                         }}>
                                             {item.tag}
                                         </span>
@@ -141,7 +146,7 @@ const AboutMe = () => {
                                             fontFamily: 'var(--font-display)',
                                             fontSize: '1.25rem',
                                             fontWeight: '700',
-                                            color: '#ffffff',
+                                            color: '#0b0f19',
                                             marginBottom: '4px'
                                         }}>
                                             {item.title}

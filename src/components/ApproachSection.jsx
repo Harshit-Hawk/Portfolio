@@ -64,7 +64,7 @@ const ApproachSection = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -111,7 +111,9 @@ const ApproachSection = () => {
                                     position: 'relative',
                                     display: 'flex',
                                     flexDirection: 'column',
-                                    justifyContent: 'space-between'
+                                    justifyContent: 'space-between',
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)'
                                 }}
                             >
                                 <div>
@@ -126,7 +128,7 @@ const ApproachSection = () => {
                                             fontFamily: 'var(--font-mono)',
                                             fontSize: '1.8rem',
                                             fontWeight: '800',
-                                            color: 'rgba(0, 212, 255, 0.4)',
+                                            color: 'rgba(0, 102, 255, 0.35)',
                                             letterSpacing: '-1px'
                                         }}>
                                             {step.num}
@@ -135,13 +137,13 @@ const ApproachSection = () => {
                                             width: '42px',
                                             height: '42px',
                                             borderRadius: '10px',
-                                            background: 'rgba(0, 102, 255, 0.1)',
-                                            border: '1px solid rgba(0, 212, 255, 0.25)',
+                                            background: '#eef5ff',
+                                            border: '1px solid #bfdbfe',
                                             display: 'flex',
                                             alignItems: 'center',
                                             justifyContent: 'center'
                                         }}>
-                                            <Icon size={20} color="var(--electric-cyan)" />
+                                            <Icon size={20} color="var(--electric-blue)" />
                                         </div>
                                     </div>
 
@@ -151,7 +153,8 @@ const ApproachSection = () => {
                                         color: 'var(--text-muted)',
                                         textTransform: 'uppercase',
                                         letterSpacing: '0.6px',
-                                        marginBottom: '0.3rem'
+                                        marginBottom: '0.3rem',
+                                        fontWeight: '600'
                                     }}>
                                         {step.subtitle}
                                     </div>
@@ -159,8 +162,8 @@ const ApproachSection = () => {
                                     <h3 style={{
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.35rem',
-                                        fontWeight: '700',
-                                        color: '#ffffff',
+                                        fontWeight: '800',
+                                        color: '#0b0f19',
                                         marginBottom: '0.9rem'
                                     }}>
                                         {step.title}
@@ -178,14 +181,14 @@ const ApproachSection = () => {
                                 <div style={{
                                     marginTop: '1.5rem',
                                     paddingTop: '1rem',
-                                    borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                                    borderTop: '1px solid rgba(15, 23, 42, 0.08)',
                                     display: 'flex',
                                     alignItems: 'center',
                                     gap: '6px',
-                                    color: 'var(--electric-cyan)',
+                                    color: 'var(--electric-blue)',
                                     fontSize: '0.78rem',
                                     fontFamily: 'var(--font-mono)',
-                                    fontWeight: '600'
+                                    fontWeight: '700'
                                 }}>
                                     <span>Step {idx + 1} of 4</span>
                                     {idx < 3 && <ArrowRight size={13} />}
@@ -203,8 +206,9 @@ const ApproachSection = () => {
                     style={{
                         padding: '2.5rem clamp(1.5rem, 4vw, 3rem)',
                         borderRadius: '16px',
-                        background: 'linear-gradient(135deg, rgba(6, 9, 20, 0.95) 0%, rgba(0, 102, 255, 0.1) 100%)',
-                        border: '1px solid rgba(0, 102, 255, 0.3)',
+                        background: 'linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%)',
+                        border: '1px solid rgba(0, 102, 255, 0.25)',
+                        boxShadow: '0 12px 36px rgba(0, 102, 255, 0.08)',
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
@@ -219,16 +223,17 @@ const ApproachSection = () => {
                         top: 0,
                         left: '20%',
                         right: '20%',
-                        height: '1px',
-                        background: 'linear-gradient(90deg, transparent, var(--electric-cyan), transparent)'
+                        height: '2px',
+                        background: 'linear-gradient(90deg, transparent, var(--electric-blue), transparent)'
                     }} />
 
                     <span style={{
                         fontSize: '0.78rem',
                         fontFamily: 'var(--font-mono)',
-                        color: 'var(--electric-cyan)',
+                        color: 'var(--electric-blue)',
                         textTransform: 'uppercase',
-                        letterSpacing: '1px'
+                        letterSpacing: '1px',
+                        fontWeight: '700'
                     }}>
                         Builder Manifesto
                     </span>
@@ -236,8 +241,8 @@ const ApproachSection = () => {
                     <blockquote style={{
                         fontFamily: 'var(--font-display)',
                         fontSize: 'clamp(1.3rem, 2.5vw, 1.9rem)',
-                        fontWeight: '700',
-                        color: '#ffffff',
+                        fontWeight: '800',
+                        color: '#0b0f19',
                         maxWidth: '850px',
                         lineHeight: '1.4',
                         margin: 0
@@ -246,9 +251,10 @@ const ApproachSection = () => {
                     </blockquote>
 
                     <div style={{
-                        color: 'var(--text-muted)',
+                        color: 'var(--text-secondary)',
                         fontSize: '0.85rem',
-                        fontFamily: 'var(--font-mono)'
+                        fontFamily: 'var(--font-mono)',
+                        fontWeight: '500'
                     }}>
                         — Harshit, Computer Science Student &amp; Builder
                     </div>

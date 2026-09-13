@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-// High-Performance 2D Electric Motion Graphic Background (Zero 3D/4D Elements)
+// High-Performance Light Theme Electric Blue Ambient Background Graphic
 const BackgroundEffects = () => {
     return (
         <div style={{
@@ -11,15 +11,15 @@ const BackgroundEffects = () => {
             overflow: 'hidden',
             pointerEvents: 'none',
             zIndex: 0,
-            background: '#000000'
+            background: 'linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%)'
         }}>
-            {/* Electric Blue Core Spotlight 1 */}
+            {/* Royal Blue Ambient Glow Spotlight 1 */}
             <motion.div
                 animate={{
-                    scale: [1, 1.15, 1],
-                    opacity: [0.35, 0.5, 0.35],
-                    x: ['-5%', '5%', '-5%'],
-                    y: ['-5%', '5%', '-5%'],
+                    scale: [1, 1.12, 1],
+                    opacity: [0.4, 0.65, 0.4],
+                    x: ['-4%', '4%', '-4%'],
+                    y: ['-4%', '4%', '-4%'],
                 }}
                 transition={{
                     duration: 10,
@@ -28,22 +28,22 @@ const BackgroundEffects = () => {
                 }}
                 style={{
                     position: 'absolute',
-                    top: '-10%',
+                    top: '-8%',
                     left: '20%',
-                    width: '65vw',
+                    width: '60vw',
                     height: '55vh',
                     borderRadius: '50%',
-                    background: 'radial-gradient(circle, rgba(0, 102, 255, 0.28) 0%, rgba(0, 212, 255, 0.12) 40%, transparent 75%)',
-                    filter: 'blur(75px)',
+                    background: 'radial-gradient(circle, rgba(0, 102, 255, 0.12) 0%, rgba(56, 139, 253, 0.06) 45%, transparent 75%)',
+                    filter: 'blur(70px)',
                 }}
             />
 
-            {/* Electric Blue Core Spotlight 2 */}
+            {/* Subtle Sky Blue Secondary Spotlight */}
             <motion.div
                 animate={{
-                    scale: [1.1, 0.95, 1.1],
-                    opacity: [0.25, 0.45, 0.25],
-                    x: ['5%', '-5%', '5%'],
+                    scale: [1.08, 0.95, 1.08],
+                    opacity: [0.35, 0.55, 0.35],
+                    x: ['4%', '-4%', '4%'],
                 }}
                 transition={{
                     duration: 12,
@@ -53,34 +53,34 @@ const BackgroundEffects = () => {
                 style={{
                     position: 'absolute',
                     top: '30%',
-                    right: '10%',
+                    right: '8%',
                     width: '50vw',
                     height: '50vh',
                     borderRadius: '50%',
-                    background: 'radial-gradient(circle, rgba(0, 153, 255, 0.22) 0%, rgba(0, 80, 255, 0.08) 50%, transparent 70%)',
-                    filter: 'blur(80px)',
+                    background: 'radial-gradient(circle, rgba(2, 132, 199, 0.1) 0%, rgba(0, 102, 255, 0.04) 50%, transparent 70%)',
+                    filter: 'blur(75px)',
                 }}
             />
 
-            {/* Subtle Vector Line Grid */}
+            {/* Subtle Vector Line Grid in Light Mode */}
             <div
                 className="electric-grid-pattern"
                 style={{
                     position: 'absolute',
                     inset: 0,
-                    opacity: 0.65,
-                    maskImage: 'radial-gradient(ellipse at 50% 35%, black 40%, transparent 80%)',
-                    WebkitMaskImage: 'radial-gradient(ellipse at 50% 35%, black 40%, transparent 80%)'
+                    opacity: 0.75,
+                    maskImage: 'radial-gradient(ellipse at 50% 35%, black 40%, transparent 85%)',
+                    WebkitMaskImage: 'radial-gradient(ellipse at 50% 35%, black 40%, transparent 85%)'
                 }}
             />
 
-            {/* Horizontal Electric Scanning Beam */}
+            {/* Horizontal Subtle Scanning Accent Line */}
             <motion.div
                 animate={{
                     y: ['-10%', '110%']
                 }}
                 transition={{
-                    duration: 8,
+                    duration: 9,
                     repeat: Infinity,
                     ease: "linear"
                 }}
@@ -89,9 +89,9 @@ const BackgroundEffects = () => {
                     left: 0,
                     right: 0,
                     height: '1px',
-                    background: 'linear-gradient(90deg, transparent 0%, rgba(0, 212, 255, 0.6) 50%, transparent 100%)',
-                    boxShadow: '0 0 15px rgba(0, 212, 255, 0.5)',
-                    opacity: 0.5
+                    background: 'linear-gradient(90deg, transparent 0%, rgba(0, 102, 255, 0.35) 50%, transparent 100%)',
+                    boxShadow: '0 0 12px rgba(0, 102, 255, 0.25)',
+                    opacity: 0.6
                 }}
             />
         </div>
@@ -99,3 +99,4 @@ const BackgroundEffects = () => {
 };
 
 export default BackgroundEffects;
+

@@ -58,7 +58,7 @@ const WhatIDo = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -104,7 +104,8 @@ const WhatIDo = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     justifyContent: 'space-between',
-                                    border: '1px solid rgba(0, 102, 255, 0.2)'
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)'
                                 }}
                             >
                                 <div>
@@ -112,21 +113,21 @@ const WhatIDo = () => {
                                         width: '50px',
                                         height: '50px',
                                         borderRadius: '12px',
-                                        background: 'rgba(0, 102, 255, 0.12)',
-                                        border: '1px solid rgba(0, 102, 255, 0.3)',
+                                        background: '#eef5ff',
+                                        border: '1px solid #bfdbfe',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center',
                                         marginBottom: '1.5rem'
                                     }}>
-                                        <Icon size={24} color="var(--electric-cyan)" />
+                                        <Icon size={24} color="var(--electric-blue)" />
                                     </div>
 
                                     <h3 style={{
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.35rem',
                                         fontWeight: '700',
-                                        color: '#ffffff',
+                                        color: '#0b0f19',
                                         marginBottom: '0.8rem'
                                     }}>
                                         {pillar.title}
@@ -146,7 +147,7 @@ const WhatIDo = () => {
                                     display: 'flex',
                                     flexWrap: 'wrap',
                                     gap: '6px',
-                                    borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+                                    borderTop: '1px solid rgba(15, 23, 42, 0.08)',
                                     paddingTop: '1.2rem'
                                 }}>
                                     {pillar.focus.map((item) => (
@@ -155,10 +156,12 @@ const WhatIDo = () => {
                                             style={{
                                                 fontSize: '0.74rem',
                                                 fontFamily: 'var(--font-mono)',
-                                                color: 'var(--electric-cyan)',
-                                                background: 'rgba(0, 212, 255, 0.06)',
+                                                color: 'var(--electric-blue)',
+                                                background: '#f0f7ff',
+                                                border: '1px solid #dbeafe',
                                                 padding: '3px 8px',
-                                                borderRadius: '4px'
+                                                borderRadius: '4px',
+                                                fontWeight: '600'
                                             }}
                                         >
                                             {item}

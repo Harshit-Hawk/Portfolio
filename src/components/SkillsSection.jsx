@@ -59,7 +59,7 @@ const SkillsSection = () => {
                             fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
                             fontWeight: '800',
                             letterSpacing: '-1px',
-                            color: '#ffffff',
+                            color: '#0b0f19',
                             marginBottom: '1rem'
                         }}
                     >
@@ -102,7 +102,8 @@ const SkillsSection = () => {
                                 className="bento-card"
                                 style={{
                                     padding: '2.2rem',
-                                    border: '1px solid rgba(0, 102, 255, 0.22)'
+                                    border: '1px solid rgba(0, 102, 255, 0.16)',
+                                    background: 'var(--bg-card)'
                                 }}
                             >
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1.4rem' }}>
@@ -110,19 +111,19 @@ const SkillsSection = () => {
                                         width: '38px',
                                         height: '38px',
                                         borderRadius: '8px',
-                                        background: 'rgba(0, 102, 255, 0.12)',
-                                        border: '1px solid rgba(0, 102, 255, 0.25)',
+                                        background: '#eef5ff',
+                                        border: '1px solid #bfdbfe',
                                         display: 'flex',
                                         alignItems: 'center',
                                         justifyContent: 'center'
                                     }}>
-                                        <Icon size={18} color="var(--electric-cyan)" />
+                                        <Icon size={18} color="var(--electric-blue)" />
                                     </div>
                                     <h3 style={{
                                         fontFamily: 'var(--font-display)',
                                         fontSize: '1.2rem',
                                         fontWeight: '700',
-                                        color: '#ffffff'
+                                        color: '#0b0f19'
                                     }}>
                                         {group.category}
                                     </h3>
@@ -135,11 +136,13 @@ const SkillsSection = () => {
                                             style={{
                                                 fontSize: '0.84rem',
                                                 fontFamily: 'var(--font-mono)',
+                                                fontWeight: '600',
                                                 padding: '6px 12px',
-                                                background: 'rgba(255, 255, 255, 0.04)',
-                                                border: '1px solid rgba(255, 255, 255, 0.08)',
+                                                background: '#ffffff',
+                                                border: '1px solid rgba(15, 23, 42, 0.1)',
+                                                boxShadow: '0 1px 3px rgba(15, 23, 42, 0.04)',
                                                 borderRadius: '6px',
-                                                color: 'var(--text-white)'
+                                                color: '#0b0f19'
                                             }}
                                         >
                                             {skill}
@@ -162,7 +165,7 @@ const SkillsSection = () => {
                     justifyContent: 'center',
                     gap: '8px'
                 }}>
-                    <CheckCircle2 size={16} color="var(--electric-cyan)" />
+                    <CheckCircle2 size={16} color="var(--electric-blue)" />
                     <span>“Only technologies I actively work with are listed here.”</span>
                 </div>
             </div>
